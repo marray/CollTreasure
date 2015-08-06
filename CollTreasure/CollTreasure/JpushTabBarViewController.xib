@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppDelegate">
+            <connections>
+                <outlet property="rootcontroller" destination="VeH-jy-wA1" id="OS8-LH-6j9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tabBarController nibName="" definesPresentationContext="YES" id="VeH-jy-wA1">
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <tabBar key="tabBar" contentMode="scaleToFill" id="yuE-es-ZiW">
+                <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tabBar>
+            <viewControllers>
+                <viewController nibName="RootViewController" id="9GT-Cd-EOq" customClass="RootViewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="index.png" id="vVW-rg-YMQ"/>
+                </viewController>
+                <viewController nibName="SetTagsViewController" id="sQf-a4-3DU" customClass="SetTagsViewController">
+                    <tabBarItem key="tabBarItem" title="TagAlias" image="setTags.png" id="83J-7q-2LH"/>
+                </viewController>
+                <viewController nibName="setLocalNotificationViewController" automaticallyAdjustsScrollViewInsets="NO" id="f2d-YS-wuU" customClass="setLocalNotificationViewController">
+                    <tabBarItem key="tabBarItem" title="本地通知" image="localNotification.png" id="KMK-3e-gKc"/>
+                    <toolbarItems/>
+                </viewController>
+                <viewController id="5R8-OL-Pjp" customClass="SendBadgeViewController">
+                    <tabBarItem key="tabBarItem" title="Badge" image="report.png" id="698-bB-lhI"/>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="464" y="407"/>
+        </tabBarController>
+    </objects>
+    <resources>
+        <image name="index.png" width="28" height="25"/>
+        <image name="localNotification.png" width="28" height="25"/>
+        <image name="report.png" width="28" height="25"/>
+        <image name="setTags.png" width="28" height="25"/>
+    </resources>
+</document>
